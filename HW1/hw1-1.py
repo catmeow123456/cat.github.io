@@ -1,6 +1,7 @@
 import json
 from pyecharts import options as opts
 from pyecharts.charts import Map
+from pyecharts.charts import Page
 
 """
 2200 家人工智能企业\n在省市自治区的分布(2023)
@@ -28,7 +29,11 @@ c = (
                                           ),
     )
 )
-c.render(path="hw1-1-1.html")
+page = Page(layout=Page.SimplePageLayout)
+page.add(
+    c
+)
+page.render(path="hw1-1-1.html")
 
 
 """
@@ -63,4 +68,8 @@ c = (
                                           ),
     )
 )
-c.render(path="hw1-1-2.html")
+page = Page(layout=Page.SimplePageLayout)
+page.add(
+    c
+)
+page.render(path="hw1-1-2.html")
