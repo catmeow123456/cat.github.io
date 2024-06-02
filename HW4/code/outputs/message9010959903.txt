@@ -1,0 +1,4 @@
+哎，以颅顶为原点坐标（34,21,-19）的头发还是离我而去了
+
+
+/gamerule allowHairDrop false
